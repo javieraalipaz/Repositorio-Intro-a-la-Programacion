@@ -1,28 +1,30 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+// SumaJavi.cpp : main project file.
 
-# Precompiled Headers
-*.gch
-*.pch
+#include "stdafx.h"
+#include<iostream>
+#include<conio.h>
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+using namespace std;
 
-# Fortran module files
-*.mod
+void main ()
+{
+	int A, B, C, D, E, F;
+	cout << "Ingrese el primer valor";
+	cin >> A;
+	cout << "Ingrese el segundo valor";
+	cin >>B;
+	C= A+B;
+	D= A-B;
+	E= A*B;
+	F= A/B;
+	cout << "El resultado de la suma es: "<<C<<endl;
+	cout << "El resultado de la resta es: "<<D<<endl;
+	cout << "El resultado de la multiplicacion: "<<E<<endl;
+	cout << "El resultado de la division: "<<F<<endl;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+	cout << "Gracias por usar la mejor calculadora attentamente, Javiera.";
+	
+	getch();
+
+}
