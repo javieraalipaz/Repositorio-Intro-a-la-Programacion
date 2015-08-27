@@ -1,0 +1,26 @@
+// AreadeRectangulo.cpp : main project file.
+//Autor: Javiera Alipaz;
+//Fecha: 27/07/15
+
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+    float A, B, L;
+		cout << "Ingrese base del rectangulo: ";
+		cin >> B;
+
+		cout << "Ingrese el largo del rectangulo: ";
+		cin >> L;
+
+		A= B*L;
+
+		cout << "El area del rectangulo es: "<<A<<endl;
+
+		getch();
+
+}
