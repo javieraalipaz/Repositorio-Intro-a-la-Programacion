@@ -1,0 +1,33 @@
+// Area del Triangulo.cpp : main project file.
+//Autor: Javiera Alípaz
+//02/09//15
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+//Librerías
+
+using namespace std;
+//Uso del teclado standard
+
+void main()
+	//Cuerpo principal
+{
+    float A, B, H;
+	//Declaración de variables;
+	cout<<"Ingrese base: ";
+	//En la pantalla aparece "Ingrese base" para que el usuario sepa el valor que debe ingresar;
+	cin>>B;
+	//El usuario ingresa el valor de la base y la computadora lo procesa como valor "B"
+	cout<<"Ingrese altura: ";
+	//En la pantalla aparece "Ingrese altura" para que el usuario sepa el valor que debe ingresar;
+	cin>>H;
+	//El usuario ingresa el valor de la altura y la computadora lo procesa como valor "H";
+	A=(B*H)/2;
+	//Se toma los valores ingresados para solucionar la ecuación propuesta;
+	cout<<"El area es: "<<A;
+	//El resultado aparece en la pantalla para que el usuario pueda ver el resultado;
+	getch();
+	//El getch(); deteniene la pantalla para que el programa no se cierre automaticamente;
+}
+//Fin del programa
