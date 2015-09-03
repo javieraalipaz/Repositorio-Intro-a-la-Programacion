@@ -1,0 +1,49 @@
+//Objetivo: Hallar en Maximo Comun denominador
+//Autor: Javiera Alípaz
+//Fecha: 02/09/15
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+//Librerias
+
+using namespace std;
+//Uso del monitor y teclado estandar.
+
+void main()
+	//cuperpo principal
+{int a,b,x,z,y=1,i=2;
+//declaración de variables como números enteros
+	cout<<"por favor ingrese dos numeros: ";
+	cin>>a;
+	cin>>b;
+	//se le da valor a las dos variables
+		if(a<b)
+		{
+			x=a;
+			z=b;
+			//if= si las variables entran en el caso especificado por if, se ejecuta la operacion.
+		}
+		else 
+		{
+			x=b;
+			z=a;
+			//else= si las variables no cumplen con el caso especificado por if, else presenta otra operacion
+		}
+	do{
+		if(x%i==0 && z%i==0)
+		{
+			y=y*i;
+			x=x/i;
+			z=z/i;
+			//se prosigue después del else,a la instruccion do- que se traduce en: hacer- después de aclarar si if, else--> do
+		}
+		else
+		{i++;}
+	   }
+	while(i<=x);
+	cout<<"el MCD es: "<<y;
+	getch();
+	//while= while describe un valor que se mantiene a traves de las operaciones
+}
+//Fin del programa
