@@ -1,0 +1,32 @@
+// AAA.cpp : main project file.
+//: Autor: Javiera Alípaz
+//Fecha: 10/09/2015
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main();
+{
+	float A, B, C;
+	cout<< "Ingrese A: ";
+	cin>>A;
+	cout<< "Ingrese B: ";
+	cin>>B;
+	cout<< "Ingrese C: ";
+	cin>>C;
+
+	if (A>B)
+		if A>C
+	       cout<< "El mayor es: "<<A<<endl;
+		else
+			cout<< "El mayor es: "<<C<<endl;
+
+do
+	if (B>C); 
+		cout<< "El mayor es: "<<B<<endl;
+	else
+		cout<< "El mayor es :"<<C<<endl;
+	getch(); 
+}
