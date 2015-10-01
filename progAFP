@@ -1,0 +1,30 @@
+// AFP Sueldos.cpp : main project file.
+//Autor: Javiera Alípaz
+//Fecha: 01/10/15
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	float S, i, salariomin, suma;
+	int n, h;
+	cout<< "Ingrese el numero de sueldos: ";
+	cin>>n;
+	salariomin= 2*1656;
+	for (h=1;h<=n;h++)
+	{
+		cout<<"Ingrese el sueldo del empleado: "<< h << ": " << endl;
+		cin>>S;
+		i=0;
+		if (S>salariomin)
+			i=S*0.13;
+		cout<<"El impuesto a pagar es: "<<i<<endl;
+		suma= suma+i;
+	}
+	cout<<"El impuesto total a pagar es: "<<suma<<endl;
+	getch();
+}
