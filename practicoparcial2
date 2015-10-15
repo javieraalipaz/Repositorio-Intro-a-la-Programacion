@@ -1,0 +1,86 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+#include "stdlib.h"
+
+using namespace std;
+
+
+void main()
+{
+	int N, opcion;
+	float suma, x, mayor, menor, acum;
+	 do{
+		 cout<< "\t\t Menu \n";
+		 cout<< "1. Promedio de n numeros \n";
+		 cout<< "2. El mayor y el menor de N numeros \n";
+		 cout<< "3. Suma de los digitos\n";
+		 cout<< "4. Suma de los numeros intercalados \n";
+		 cout<< "0. Salir del programa \n";
+		 cout<< "Opción: "; 
+		 cin>> opcion;
+		 switch (opcion)
+			 {
+		 case 1:
+			 cout<< "Ingrese la cantidad de números enteros a promediar: ";
+			 cin>> N;
+			 suma =0;
+			 cout<< "Ingrese los números a promediar: ";
+			 for (int i=1; i<=N; i++)
+			{
+					cin>>x;
+					suma= suma + x;
+			 }
+			 cout<< "El promedio es: "<<suma/N;
+			 break;
+		 case 2: 
+			 cout<< "Ingrese la cantidad de números reales para hallar menor o menor: ";
+			 cin>> N;
+			 cout<< "Ingrese los números: ";
+			 cin>> x;
+			 mayor =x;
+			 menor =x;
+			 for (int i=1; i<=N-1; i++)  {
+				 cin>> x;
+				 if (mayor <=x) 
+					 mayor =x;
+				 else
+					 menor= x;
+			 }
+			 cout<<"El mayor es: "<<mayor;
+			 cout<<"El menor es: "<<menor;
+		 case 3:
+			 cout<<"Ingrese el numero: ";
+			 cin>>N;
+			 while (N!=0)
+			 {
+				 acum=acum+N%10;
+				 N=N/10;
+			 }
+			 cout<<"La suma de los dígitos es: "<<acum;
+			 break;
+		 case 4:
+			 cout<<"Ingrese la cantidad de valores a calcular: ";
+			 cin>>N;
+			 cout<<"Ingrese los números: ";
+			 for (int i=1; i<=N; i++)
+			 {
+				 cin>>x;
+				 if (i%2==0)
+					 cout<<  "El par elevado al cuadrado es: "<< pow(x, 2);
+				 else 
+					 cout<< "El impar negativo es: "<< x*(-1);
+			 }
+			 break;
+		 case 0:
+			 cout "Saliendo del programa.";
+		 default:
+			 cout<<" Vuelva a ingresar una opción válida.";
+				 break;
+		 }
+	 } 
+	 _getch();
+	 system ("cls");
+	 while (opcion !=0);
+}
