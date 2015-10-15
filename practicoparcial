@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+int sumaentrennumeros (int A);
+int sumaimpares (int B);
+int sumadecuadrados (int C);
+int sumaintercalado (int D);
+int producto (int E);
+int Horner (int F);
+
+void main()
+{
+	int N, opcion, S, P;
+	float x;
+	 do{
+		 cout<< "\t\t Menu \n";
+		 cout<< "1. Suma de n números \n";
+		 cout<< "2. Suma de los números impares \n";
+		 cout<< "3. Suma de los cuadrados \n";
+		 cout<< "4. Suma de los numeros intercalados \n";
+		 cout<< "5. Producto de los numeros enteros \n";
+		 cout<< "6. Horner \n";
+		 cout<< "0. Salir del programa \n";
+		 cout<< "Opción: "; 
+		 cin>> opcion;
+		 switch (opcion)
+			 {
+		 case 1:
+			 cout<< "Ingrese la cantidad de números enteros a sumar: ";
+			 cin>> N;
+			 cout<< "La suma es: "<<sumaentrennumeros (N)
+
+	 }
+	 getch();
+}
