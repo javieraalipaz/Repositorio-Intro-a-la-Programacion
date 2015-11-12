@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+int cargar (int vec [], int N);
+void mostrar (int vec[], int N);
+void main() //si son tres parametros se debe enviar 3 variables
+{
+
+	int N, S, sig, vec[]; //siempre que se decalara un vec se pone corchetes []
+	cout<<"Ingrese la cantidad de terminos pares a sumar:"<<endl;
+	cin>>N;
+	S=cargar (vec, N);
+	mostrar (vec, S);
+	getch();
+}
+	int cargar (int vec [], int N)
+	{
+	int sig, j;
+	sig=-1;
+	j=0;
+	for (int i=2; i<=N; i=i=+2)
+	{	
+		vec[j]=sig*i;
+		sig=-sig;
+		j=j+1;
+	}
+	return j;
+	}
+	void mostrar (int vec[], int N)
+	{
+		for (int i=0; i<N; i++)
+			cout<<"Vec["<<i<<"]= "<<vec[i]<<endl; //solo hay una instruccion entonces no se usan llaves
+	}
